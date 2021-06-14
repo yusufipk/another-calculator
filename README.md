@@ -1,6 +1,6 @@
 # Another Calculator
 
-I've taken Frontend-Mentor challenge [https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29](challenge link) and created this calculator.
+I've taken Frontend-Mentor challenge [challenge link](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29]) and created this calculator.
 
 ## Table of contents
 
