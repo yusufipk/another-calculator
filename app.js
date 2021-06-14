@@ -17,28 +17,30 @@ switch (localStorage.getItem("theme")) {
   case "theme3":
     theme3.checked = true;
     break;
+  default:
+    break;
 }
 
 theme1.addEventListener("click", () => {
   theme2.checked = false;
   theme3.checked = false;
   localStorage.setItem("theme", "theme1");
+  changeTheme();
 });
-theme1.addEventListener("click", changeTheme);
 
 theme2.addEventListener("click", () => {
   theme1.checked = false;
   theme3.checked = false;
   localStorage.setItem("theme", "theme2");
+  changeTheme();
 });
-theme2.addEventListener("click", changeTheme);
 
 theme3.addEventListener("click", () => {
   theme1.checked = false;
   theme2.checked = false;
   localStorage.setItem("theme", "theme3");
+  changeTheme();
 });
-theme3.addEventListener("click", changeTheme);
 
 function changeTheme() {
   if (theme1.checked) {
@@ -47,7 +49,7 @@ function changeTheme() {
     document.body.setAttribute("data-theme", "light");
   } else if (theme3.checked) {
     document.body.setAttribute("data-theme", "purple");
-  }
+  } else return;
 }
 
 changeTheme();
